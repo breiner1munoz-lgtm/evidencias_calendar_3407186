@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="main-header">
+        <div class="main-header__container">
+        <div class="main-header__logo">
+            Calendario de Eventos
+        </div>
+
+          <button class="main-header__toggle" id="menu-toggle">
+            <div class="main-header__bar"></div>
+            <div class="main-header__bar"></div>
+            <div class="main-header__bar"></div>
+        </button>
+        <div class="main-nav" id="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">
+                     Buscar
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">
+                     Ayuda
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="1.png" class="main-nav__link">
+                     Configuracion
+                    </a>
+                </li>
+            </ul>
+        </div>
+   </div>
+</div>
+
+
+
+    <div class="container">
+        <div class="month">
+            <h2 class="month__name">
+                June
+            </h2>
+
+        </div>
+        <div class="days">
+            <div class="days__item">Mon</div>
+            <div class="days__item">Tue</div>
+            <div class="days__item">Wed</div>
+            <div class="days__item">Thu</div>
+            <div class="days__item">Fri</div>
+            <div class="days__item">Sat</div>
+            <div class="days__item">Sun</div>
+        </div>
+        <div class="sheudule">
+            <div class="sheudele">1</div>
+            <div class="sheudele">2
+                 <p>Cumpleaños Padre</p>
+            </div>
+            
+            <div class="sheudele">3</div>
+            <div class="sheudele">4</div>
+            <div class="sheudele">5
+                <p>Cumpleaños Madre</p>
+            </div>
+
+            <div class="sheudele">6</div>
+            <div class="sheudele">7
+                <p>Cumpleaños Hermana</p>
+            </div>
+            <div class="sheudele">8</div>
+            <div class="sheudele">9</div>
+            <div class="sheudele">10</div>
+            <div class="sheudele">11</div>
+            <div class="sheudele">12</div>
+            <div class="sheudele">13
+                <p>Cumpleaños Nanis</p>
+            </div>
+            <div class="sheudele">14</div>
+            <div class="sheudele">15</div>
+            <div class="sheudele">16</div>
+            <div class="sheudele">17</div>
+            <div class="sheudele">18</div>
+            <div class="sheudele">19</div>
+            <div class="sheudele">20</div>
+            <div class="sheudele">21</div>
+            <div class="sheudele">22</div>
+            <div class="sheudele">23</div>
+            <div class="sheudele">24</div>
+            <div class="sheudele">25</div>
+            <div class="sheudele">26</div>
+            <div class="sheudele">27</div>
+            <div class="sheudele">28</div>
+            <div class="sheudele">29</div>
+            <div class="sheudele">30</div>
+                
+            </div>
+        </div>
+         
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        menuToggle.addEventListener('click'  , ()=>{
+            mainNav.classList.toggle('main-nav__open');
+        })
+
+
+
+    </script>
+    
+</body>
+</html>

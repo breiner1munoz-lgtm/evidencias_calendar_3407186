@@ -1,205 +1,160 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-
+    <title>Calendario de Eventos</title>
 </head>
 <body>
     <div class="main-header">
         <div class="main-header__container">
-        <div class="main-header__logo">
-            Calendario de Eventos
+            <div class="main-header__logo">
+                Calendario de Eventos
+            </div>
+            <button class="main-header__toggle" id="menu-toggle" aria-label="Abrir menú">
+                <div class="main-header__bar"></div>
+                <div class="main-header__bar"></div>
+                <div class="main-header__bar"></div>
+            </button>
+            <div class="main-nav" id="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Buscar</a>
+                    </li>
+                    <li class="main-nav__item">
+                         <a href="#" class="main-nav__link">Ayuda</a>
+                    </li>
+                    <li class="main-nav__item">
+                         <a href="#" class="main-nav__link">Configuración</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-          <button class="main-header__toggle" id="menu-toggle">
-            <div class="main-header__bar"></div>
-            <div class="main-header__bar"></div>
-            <div class="main-header__bar"></div>
-        </button>
-        <div class="main-nav" id="main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">
-                     Buscar
-                    </a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#" class="main-nav__link">
-                     Ayuda
-                    </a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="1.png" class="main-nav__link">
-                     Configuracion
-                    </a>
-                </li>
-            </ul>
-        </div>
-   </div>
-</div>
-
-
+    </div>
 
     <div class="container">
         <div class="month">
-            <h2 class="month__name">
-                June
-            </h2>
-
+            <h2 class="month__name">Junio</h2>
         </div>
-        <div class="days">
-            <div class="days__item">Mon</div>
-            <div class="days__item">Tue</div>
-            <div class="days__item">Wed</div>
-            <div class="days__item">Thu</div>
-            <div class="days__item">Fri</div>
-            <div class="days__item">Sat</div>
-            <div class="days__item">Sun</div>
-        </div>
-        <div class="sheudule">
-            <div class="sheudele">1</div>
-            <div class="sheudele">
-                <span class="sheudele__number">2</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Padre</p>
-                        <span>Suba - 4:00 PM</span>
-                    </div>
-                </div>
+        
+        <div class="calendar-responsive-wrapper">
+            
+            <div class="days">
+                <div class="days__item">Lun</div>
+                <div class="days__item">Mar</div>
+                <div class="days__item">Mié</div>
+                <div class="days__item">Jue</div>
+                <div class="days__item">Vie</div>
+                <div class="days__item">Sáb</div>
+                <div class="days__item">Dom</div>
             </div>
             
-            <div class="sheudele">3</div>
-            <div class="sheudele">4</div>
-            <div class="sheudele">
-                <span class="sheudele__number">5</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Madre</p>
-                        <span>Chapinero - 2:00 PM</span>
-                    </div>
+            <div class="schedule">
+                <div class="schedule__day">1
+                    <p>
+                        <strong>Cumpleaños madre</strong><br>
+                        <small>La paz a las 9:00 a.m.</small>
+                        <img src="1.avif" alt="Cumpleaños" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-
-            <div class="sheudele">6</div>
-            <div class="sheudele">
-                <span class="sheudele__number">7</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Hermana</p>
-                        <span>Usaquén - 6:30 PM</span>
-                    </div>
+                <div class="schedule__day">2</div>
+                <div class="schedule__day">3</div>
+                <div class="schedule__day">4</div>
+                <div class="schedule__day">5</div>
+                <div class="schedule__day">6
+                    <p>
+                        <strong>Cumpleaños papá</strong><br>
+                        <small>Lomas a las 9:00 a.m....</small><br>
+                        <img src="2.jpg" alt="Papá" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-            <div class="sheudele">8</div>
-            <div class="sheudele">9</div>
-            <div class="sheudele">
-                <span class="sheudele__number">10</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Bisabuelo</p>
-                        <span>Los Mártires - 11:00 AM</span>
-                    </div>
+                <div class="schedule__day">7</div>
+                <div class="schedule__day">8</div>
+                <div class="schedule__day">9</div>
+                <div class="schedule__day">10
+                    <p>
+                        <strong>Cumpleaños abuelo</strong><br>
+                        <small>Chapinero a las 1:00 p.m.
+                        </small><br>
+                        <img src="3.png" alt="Regalo" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-            <div class="sheudele">11</div>
-            <div class="sheudele">12</div>
-            <div class="sheudele">
-                <span class="sheudele__number">13</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Nanis</p>
-                        <span>La Candelaria - 3:00 PM</span>
-                    </div>
+                <div class="schedule__day">11</div>
+                <div class="schedule__day">12</div>
+                <div class="schedule__day">13</div>
+                <div class="schedule__day">14</div>
+                <div class="schedule__day">15
+                    <p>
+                        <strong>Cumpleaños sobrino</strong><br>
+                        <small>Calendaria a las 2:00 p.m.</small>
+                        <img src="4.avif" alt="Viaje" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-            <div class="sheudele">14</div>
-            <div class="sheudele">
-                <span class="sheudele__number">15</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Prima</p>
-                        <span>Suba - 5:30 PM</span>
-                    </div>
+                <div class="schedule__day">16</div>
+                <div class="schedule__day">17</div>
+                <div class="schedule__day">18
+                    <p>
+                        <strong>Cumpleaños Nicol</strong><br>
+                        <small>Usme a las 2:00 p.m.</small><br>
+                        <img src="5.avif" alt="Papá" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-            <div class="sheudele">16</div>
-            <div class="sheudele">17</div>
-            <div class="sheudele">18</div>
-            <div class="sheudele">
-                <span class="sheudele__number">19</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Hermano</p>
-                        <span>Chía - 7:00 PM</span>
-                    </div>
+                <div class="schedule__day">19</div>
+                <div class="schedule__day">20
+                    <p>
+                        <strong>Cumpleaños sobrina</strong><br>
+                        <small>Usme a las 3:00 p.m.</small><br>
+                        <img src="6.png" alt="Halloween" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-            <div class="sheudele">20</div>
-            <div class="sheudele">21</div>
-            <div class="sheudele">
-                <span class="sheudele__number">22</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Tío</p>
-                        <span>Bogotá Centro - 1:00 PM</span>
-                    </div>
+                <div class="schedule__day">21</div>
+                <div class="schedule__day">22</div>
+                <div class="schedule__day">23
+                    <p>
+                        <strong>Cumpleaños Mariana</strong><br>
+                        <small>Policarpa a las 4:00 p.m.</small><br>
+                        <img src="7.jpg" alt="Papá" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-            <div class="sheudele">23</div>
-            <div class="sheudele">
-                <span class="sheudele__number">24</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Abuelo</p>
-                        <span>Fontibón - 10:00 AM</span>
-                    </div>
+                <div class="schedule__day">24</div>
+                <div class="schedule__day">25
+                    <p>
+                        <strong>Cumpleaños Maira</strong><br>
+                        <small>Lomas a las 10:00 a.m</small><br>
+                        <img src="8.jpg" alt="Papá" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-            <div class="sheudele">25</div>
-            <div class="sheudele">26</div>
-            <div class="sheudele">27</div>
-            <div class="sheudele">28</div>
-            <div class="sheudele">
-                <span class="sheudele__number">29</span>
-                <div class="event-box">
-                    <img src="1.avif" alt="Icono evento" class="event-icon">
-                    <div>
-                        <p>Cumpleaños Abuela</p>
-                        <span>Teusaquillo - 12:00 PM</span>
-                    </div>
+                <div class="schedule__day">26</div>
+                <div class="schedule__day">27
+                    <p>
+                        <strong>Cumpleaños Diego</strong><br>
+                        <small>Lomas a las 5:00 p.m.</small><br>
+                        <img src="9.jpg" alt="Papá" width="30" height="30" class="card-img">
+                    </p>
                 </div>
-            </div>
-            <div class="sheudele">30</div>
                 
+                <div class="schedule__day">28</div>
+                <div class="schedule__day">29
+                    <p>
+                        <strong>Cumpleaños abuela</strong><br>
+                        <small>Suba a las 4:00 p.m.</small><br>
+                        <img src="10.avif" alt="Médico" width="30" height="30" class="card-img">
+                    </p>
+                </div>
+                <div class="schedule__day">30</div> 
             </div>
-        </div>
-         
-    </div>
+            
+        </div> </div>
 
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mainNav = document.getElementById('main-nav');
 
-        menuToggle.addEventListener('click'  , ()=>{
+        menuToggle.addEventListener('click', () => {
             mainNav.classList.toggle('main-nav__open');
-        })
-
-
-
+        });
     </script>
-    
 </body>
 </html>
